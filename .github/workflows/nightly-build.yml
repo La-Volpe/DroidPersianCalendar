@@ -57,7 +57,7 @@ jobs:
           ./gradlew PersianCalendar:dependencies --configuration releaseRuntimeClasspath | grep -e '--- ' > PersianCalendar/runtime-dependencies-report.txt
 
       - name: Add and commit the report
-        uses: EndBug/add-and-commit@db73408897f13b2878d08ac8b3f8e51cd492c8f2
+        uses: EndBug/add-and-commit@8c5cdcb4e6b4ae2c76cde807552634e4485b17bf
         with:
           default_author: github_actions
           message: 'Update the runtime dependencies report'
